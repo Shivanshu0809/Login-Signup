@@ -1,0 +1,150 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;200&display=swap');
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:public sans ;
+}
+body{ 
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    /* background: rgb(238,174,202); */
+    /* background: rgb(238,174,202); */
+    /* background: radial-gradient(circle, rgba(238,174,202,0.8352591036414566) 2%, rgba(148,187,233,1) 100%); */
+
+/* background: radial-gradient(circle, rgba(144, 131, 131, 0.89) 0%, rgba(148,187,233,1) 100%); */
+
+
+}
+
+section{
+    min-width: 400px;
+    background-color: rgba(132, 132, 132, 0.029);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    backdrop-filter: blur(50px);
+    padding: 2rem 3rem;
+    
+}
+@media(max-width:400px){
+    section{
+        min-width:200px;
+        background-color: white;
+    }
+}
+#sec1{
+    display: block;
+}
+h1{
+   
+    text-align: center;
+    color: rgb(47, 44, 44);
+    font-size: 2rem;
+}
+
+.inputbox{
+    margin: 30px 0;
+    position: relative;
+    border-bottom: 1px solid #959393; 
+}
+.inputbox label{
+    font-size: 1rem;
+    position: absolute;
+    pointer-events: none;
+    top: 50%;
+    left: 5px;
+    transition: all 0.5s ease;
+}
+input:focus ~ label,
+input:valid ~ label
+{
+    top:-5px;
+}
+.fa-pass{
+    color: #4d4a49;
+    translate:3rem;
+    cursor: pointer;
+}
+@media(max-width:400px){
+    .fa-pass{
+        translate:.10rem;
+    }
+}
+
+.fa-pass:hover{
+    color: #000;
+  
+}
+/* .inputbox .fa-pass2{
+    display: none;
+} */
+
+.inputbox input{
+    height:60px;
+    background:transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding: 10px 35px 0 5px;
+    border-radius: 5px;
+}
+.forget ,a{
+    padding: 10px 0;
+    text-align: end;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1rem;
+    color: rgb(77, 77, 77);
+    transition: all .25s ease-in-out;
+}
+.forget:hover a{
+    color: #000;
+}
+button{
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 8px 0px;
+    border-radius: 50px;
+    border: none;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    background: rgb(226, 200, 211);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    font-weight:600;
+    transition: all .2s ease-in-out;
+    
+
+}
+button:hover{
+    background-color: antiquewhite;
+}
+
+#sec2{
+    display: none;
+}
+.switch-ac{
+    text-align: center;
+    font-size: 1rem;
+}
+.switch-ac a{
+    color: #090508;
+    transition: all .25s ease-in-out;
+}
+.switch-ac:hover a{
+    margin-left: 5px;
+    color:hsl(219, 83%, 45%);
+    
+}

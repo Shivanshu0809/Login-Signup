@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Login/Signup</title>
+</head>
+<body>
+    <!-----------Log in section----------->
+    <section id="sec1">
+        <form action="" id="login">
+            <h1>Login</h1>
+            <div class="inputbox">
+               
+            <input type="email" name="email" id="email" class="" required>
+            <label for="email">Email</label>
+            </div>
+            
+            <div class="inputbox">
+               
+                <input type="password" name="" id="password" required>
+                <label for="password">Password</label>
+               <i class="fa-pass fa-regular fa-eye" onclick="myFunction()"></i>
+               <!-- <i class="fa-pass2 fa-regular fa-eye-slash"></i> -->
+
+              
+             
+            </div>
+            <div class="forget">
+                <a href="#">Forget Password</a>
+            </div>
+
+            <button>
+                Log in
+            </button>
+            <div class="switch-ac">
+                <p>Don't have account? <a href="#" id="signup" onclick="registerFun()">Register</a>
+                </p>
+            </div>
+        </form>
+    </section>
+
+    <!----------signup section-------->
+    <section id="sec2">
+        <form action="" id="Signup2">
+            <h1>Signup</h1>
+            <div class="inputbox">
+                
+                <input type="text" id="name" required>
+                <label for="name">Name</label>
+            </div>
+            <div class="inputbox">
+                
+            <input type="email" name="email" id="email" required>
+            <label for="email">Email</label>
+            </div>
+            
+            <div class="inputbox">
+                
+                <input type="password" name="" id="password2" required>
+                <label for="password">Password</label>
+                <i class="fa-pass fa-regular fa-eye" onclick="myFunction2()"></i>
+
+            </div>
+            
+            <button>
+                Sign Up
+            </button>
+            <div class="switch-ac">
+                <p>You have already account <a href="#" id="signup" onclick="loginFun()">LogIn</a>
+                </p>
+            </div>
+        </form>
+    </section>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
